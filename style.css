@@ -650,3 +650,22 @@ body.light-mode .social-btn {
   color: var(--accent-cyan);
   transform: scale(1.1);
 }
+/* --- Added Theme Switch Smooth Animations --- */
+body,
+.navbar,
+.intro-card,
+.service-card,
+.project-card,
+.social-btn,
+.skill-badge,
+.gallery-item,
+.form-group input,
+.form-group textarea,
+.nav-link,
+.logo {
+  transition: background-color 0.6s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.avatar-img {
+  transition: opacity 0.5s ease, transform 0.3s ease;
+}
