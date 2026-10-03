@@ -113,3 +113,21 @@ if (themeToggleBtn) {
     }
   });
 }
+// --- Added Smooth Profile Image Switch on Theme Toggle ---
+const toggleButton = document.getElementById('theme-toggle');
+
+if (toggleButton) {
+  toggleButton.addEventListener('click', () => {
+    const profileImg = document.getElementById('profile-img') || document.querySelector('.avatar-img');
+
+    if (profileImg) {
+      profileImg.style.opacity = '0';
+      profileImg.style.transform = 'scale(0.95)';
+
+      setTimeout(() => {
+        profileImg.style.opacity = '1';
+        profileImg.style.transform = 'scale(1)';
+      }, 250);
+    }
+  });
+}
