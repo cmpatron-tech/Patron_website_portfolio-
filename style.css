@@ -26,7 +26,7 @@ body {
   font-family: var(--font-family);
   background-color: var(--bg-dark);
   color: var(--text-main);
-  background-image: url('../BG.jpeg'); 
+  background-image: url('../Background.jpeg'); 
   background-size: cover;        
   background-position: center;   
   background-repeat: no-repeat;  
@@ -595,6 +595,7 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
 /* --- Complete Light Mode Theme Overrides --- */
 body.light-mode {
   --bg-dark: #f8f9fa;
