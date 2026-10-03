@@ -78,3 +78,38 @@ if (contactForm) {
     }
   });
 }
+// --- Dark / Light Mode Toggle & Profile Pic Swap ---
+const themeToggleBtn = document.getElementById('theme-toggle');
+
+// Image file paths
+const darkProfileImg = 'Profile.jpeg';
+const lightProfileImg = 'Gallery1.jpeg'; // <-- Switch to your preferred photo for light mode
+
+if (themeToggleBtn) {
+  themeToggleBtn.addEventListener('click', () => {
+    // Toggle light-mode class
+    document.body.classList.toggle('light-mode');
+    
+    const isLight = document.body.classList.contains('light-mode');
+    const icon = themeToggleBtn.querySelector('i');
+    const profileImg = document.getElementById('profile-img') || document.querySelector('.avatar-img');
+
+    if (isLight) {
+      if (icon) {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      }
+      if (profileImg) {
+        profileImg.setAttribute('src', lightProfileImg);
+      }
+    } else {
+      if (icon) {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+      }
+      if (profileImg) {
+        profileImg.setAttribute('src', darkProfileImg);
+      }
+    }
+  });
+}
