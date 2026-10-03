@@ -595,3 +595,57 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* --- Complete Light Mode Theme Overrides --- */
+body.light-mode {
+  --bg-dark: #f8f9fa;
+  --bg-card: #ffffff;
+  --nav-bg: rgba(255, 255, 255, 0.95);
+  --text-main: #111111;
+  --text-sub: #444444;
+  --accent-cyan: #0077b6;
+  --accent-glow: rgba(0, 119, 182, 0.2);
+  --border-glow: rgba(0, 0, 0, 0.1);
+  background-image: none !important; /* Removes the dark background image in light mode */
+  background-color: #f8f9fa !important;
+  color: #111111 !important;
+}
+
+body.light-mode .intro-card,
+body.light-mode .service-card,
+body.light-mode .project-card {
+  background: #ffffff !important;
+  color: #222222 !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .intro-card p,
+body.light-mode .service-card p,
+body.light-mode .project-info p,
+body.light-mode .section-subtitle,
+body.light-mode .about-text-box p {
+  color: #444444 !important;
+}
+
+body.light-mode .social-btn {
+  background-color: #222222 !important;
+  color: #ffffff !important;
+}
+
+/* --- Theme Toggle Button Styling --- */
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  color: var(--text-main);
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle-btn:hover {
+  color: var(--accent-cyan);
+  transform: scale(1.1);
+}
