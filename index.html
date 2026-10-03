@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clark Patron | Web Designer & Developer</title>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles/style.css"/>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Ptrn<span>.</span></a>
+      
+      <!-- Mobile Toggle Button -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- Nav Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#services" class="nav-link">Service</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contacts" class="nav-link">Contacts</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HOME / HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <div class="avatar-wrapper">
+          <img src="Profile.jpeg" alt="Clark Patron" class="avatar-img" />
+        </div>
+
+        <h1 class="name">Clark Patron</h1>
+        <p class="role">I am a <span class="animated-role"></span></p>
+        <div class="intro-card">
+          <p>
+           "Hi there! I'm <strong>Clark Kent M. Patron</strong>, no superhero alter-ego here, just a passionate web developer building modern applications. This portfolio tracks my journey, projects, and growth in the tech space. Glad to have you here!"
+          </p>
+        </div>
+
+        <div class="social-icons">
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="mailto:your.email@example.com" class="social-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SERVICES SECTION -->
+    <section id="services" class="content-section">
+      <div class="section-header">
+        <h2>My Services</h2>
+        <p class="section-subtitle">What I can do for your business or project</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fa-solid fa-palette service-icon"></i>
+          <h3>Web & UI Design</h3>
+          <p>Creating visual wireframes, sleek mobile-first layouts, and interactive prototypes with dark-mode focus.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fa-solid fa-code service-icon"></i>
+          <h3>Frontend Development</h3>
+          <p>Writing clean, semantic HTML5, CSS3, and JavaScript code to turn flat designs into real websites.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fa-solid fa-database service-icon"></i>
+          <h3>Database & SQL Management</h3>
+          <p>Designing structured relational database schemas, executing efficient queries, and managing data integrity using SQL.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fa-solid fa-mobile-screen-button service-icon"></i>
+          <h3>Responsive Layouts</h3>
+          <p>Ensuring websites scale seamlessly across Android devices, iPhones, tablets, and Windows PCs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ABOUT SECTION -->
+    <section id="about" class="content-section">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <p class="section-subtitle">Get to know my journey and tech stack</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text-box">
+          <p>
+            I am <strong>Clark kent M. Patron</strong>, BSCS student currently an aspiring web developer specializing in frontend interfaces. I focus on building intuitive, lightweight web experiences without heavy framework bloat.
+          </p>
+          <p>
+            When I am not coding, I continuously study UI/UX trends, explore custom CSS animation techniques, and experiment with JavaScript applications.
+          </p>
+        </div>
+
+        <div class="skills-wrapper">
+          <h3>Technical Skills</h3>
+          <div class="skills-list">
+            <span class="skill-badge"><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span class="skill-badge"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="skill-badge"><i class="fa-brands fa-github"></i>GitHub</span>
+            <span class="skill-badge"><i class="fa-solid fa-mobile-button"></i> Mobile-First Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PORTFOLIO SECTION -->
+    <section id="portfolio" class="content-section">
+      <div class="section-header">
+        <h2>Featured Portfolio</h2>
+        <p class="section-subtitle">Selected web projects and mini-applications</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-info">
+            <span class="project-tag">Web Design</span>
+            <h3>Personal Portfolio</h3>
+            <p>A minimalist, dark-themed responsive website built using pure HTML, CSS, and vanilla JS.</p>
+            <div class="project-tech">
+              <span>HTML</span> • <span>CSS</span> • <span>JavaScript</span>
+            </div>
+            <a href="#home" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-info">
+            <span class="project-tag">Web App</span>
+            <h3>Interactive Dashboard</h3>
+            <p>A sleek dark-mode UI template with dynamic widgets and smooth layout transitions.</p>
+            <div class="project-tech">
+              <span>CSS Grid</span> • <span>DOM Manipulation</span>
+            </div>
+            <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-info">
+            <span class="project-tag">Frontend</span>
+            <h3>Landing Page Showcase</h3>
+            <p>A responsive promo page focused on typography, smooth animations, and mobile accessibility.</p>
+            <div class="project-tech">
+              <span>Flexbox</span> • <span>Glassmorphism</span>
+            </div>
+            <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4.5 GALLERY SECTION -->
+ <section id="gallery" class="content-section">
+   <div class="section-header">
+    <h2>Gallery</h2>
+    <p class="section-subtitle">Just a random pics i saw on my gallery..dont laugh</p>
+   </div>
+
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="Gallery1.jpeg">
+      <div class="gallery-overlay">
+        <span>Me abusing facemask era</span>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="Gallery2.jpeg">
+      <div class="gallery-overlay">
+        <span>Old random family picture</span>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="Gallery3.jpeg" />
+      <div class="gallery-overlay">
+        <span>Me and my friends</span>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="Gallery4.jpeg">
+      <div class="gallery-overlay">
+        <span>Me and my new friends</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- 5. CONTACTS SECTION -->
+    <section id="contacts" class="content-section">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p class="section-subtitle">Have a project idea or just want to connect?</p>
+      </div>
+
+      <div class="contact-container">
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Clark Patron. Designed & Built with Code.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
