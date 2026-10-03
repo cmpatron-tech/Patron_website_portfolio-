@@ -650,6 +650,7 @@ body.light-mode .social-btn {
   color: var(--accent-cyan);
   transform: scale(1.1);
 }
+
 /* --- Added Theme Switch Smooth Animations --- */
 body,
 .navbar,
